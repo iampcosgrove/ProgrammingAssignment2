@@ -2,7 +2,13 @@
 ## caching the inverse of a Matrix. 
 
 ## The makeCacheMatrix function creates a special "matrix" object that can 
-## cache its inverse.
+##    cache its inverse.
+## Example of functions required to execute:
+## #1- Run cachematrix.R file to execute makeCacheMatrix & cacheSolve functions.
+## #2- Establish matrix in environment: mymatrix <- matrix(1:4, nrow = 2, ncol =2)
+## #3- Execute cache of matrix into environment: my_cache <- makeCacheMatrix(mymatrix)
+## #4- Execute inverse of matrix (if repeated twice will pull inverse of data from cache: 
+##       cacheSolve(mymatrix)
 
 makeCacheMatrix <- function(x = matrix()) {
       i <- NULL
